@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Avanzado</title>
+</head>
+<body>
+    <h1>Ejemplo de tabla</h1>
+    <!--Las tablas son un conjunto estructurado de datos compuesto por filas y columnas-->
+    <caption align="center">Tabla de nombres</caption> <!--Caption representa un título despcriptivo de una tabla-->
+    <table border="1" align="center"> <!--La etiqueta table crea la tabla y con border añadimos el borde de nuestra tabla-->
+        <tr> <!--Representa una fila-->
+            <th>Encabezado</th> <!--Celdas de encabezado-->
+            <th>Encabezado 2</th>
+
+        </tr>
+        <tr>
+            <td>Nombre 1</td> <!--Representa la primera cela--> 
+            <td>Apellido 1</td> <!--Representa la segunda celda de la primera fila-->
+        </tr>
+        <tr>
+            <td>Taylor</td>
+            <td>Swift</td>
+        </tr>
+        <tr>
+            <td>Chalino</td>
+            <td>Sánchez</td>
+        </tr>
+    </table>
+<hr>
+    <caption>Nombres incorrectos</caption>
+    <table border="1">
+        <tr>
+            <th style="background-color: lightpink;">Correcto</th>
+            <th>Incorrecto</th>
+        </tr>
+        <tr>
+            <td>Eveida</td>
+            <td>Ebeida/ Evelyn</td>
+        </tr>
+        <tr>
+            <td>Esquivel</td>
+            <td>Ezquivel</td>
+        </tr>
+
+    </table>
+    <br>
+    <br>
+    <hr>
+
+    <table border="1">
+        <thead> <!--Esta etiqueta agrupa los elementos de la cabeceraen la tabla-->
+            <tr>
+                <th colspan="3">Encabezado de tablas</th> <!--Permite expandir las celdas de datos o de encabezados al número de columnas que deseamos-->
+
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>El cuerpo de la tabla</td>
+            <td>Con dos columnas</td>
+            <td>columna</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Piesitos</th>
+          </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    <h1 id="anclajes">Anclajes internos y externos</h1>
+
+    <h2 align="center"><em>Mariposa monarca </em></h2>
+    <h5>Las monarcas occidentales han disminuido en más del 99 por ciento desde la década de 1980. Las monarcas orientales han disminuido en aproximadamente un 80 por ciento.</h5>
+    <a href="#seccion1">Peligro de extinción</a>
+    <br>
+    <a href="#seccion2">Conservación</a>
+    <br>
+    <a href="#seccion3">Trurismo responsable</a>
+    <br>
+    <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/2273.600x450.webp?w=710&h=533" alt="Mariposa monarca" rel="noopener noreferrer" width="200px">
+
+    <p> Las mariposas monarca (Danaus plexippus) son mundialmente conocidas por la increíble migración masiva que lleva a millones de ejemplares a California y México cada invierno. La monarca norteamericana es la única mariposa que realiza una travesía tan espectacular, con una distancia cercana a los 5000 kilómetros. Estos insectos deben partir cada otoño antes de que llegue el frío, que acabaría con ellos si se demoran demasiado.
+      
+    <br> La monarca es una de las mariposas más reconocibles y mejor estudiadas del planeta. Sus alas naranjas están entrelazadas con líneas negras y bordeadas con puntos blancos. Aunque la mariposa monarca es nativa de América del Norte y del Sur, se ha extendido a otros lugares cálidos donde crece el algodoncillo, su único alimento. 
+    <br> Las mariposas monarca de América del Norte, que ya no se encuentran en América del Sur, se dividen en dos grupos principales: las monarcas occidentales, que se reproducen al oeste de las Montañas Rocosas y pasan el invierno en el sur de California; y las monarcas orientales, que se reproducen en las Grandes Llanuras y Canadá, y pasan el invierno en el centro de México. También hay poblaciones en Hawái; Portugal y España; y Australia, Nueva Zelanda y otras partes de Oceanía.</p>
+    
+  <h4 id="seccion1">¿Están las mariposas monarca en peligro de extinción?</h4>
+  <p> Según las Unión Internacional para la Conservación de la Naturaleza (UICN), que estudió la especie en 2021, la mariposa monarca no corre peligro, aunque en su lista roja destaca que su población está en descenso. El organismo internacional señala su preocupación por la población de la especie en su migración más occidental, cuyos números "nunca habían sido tan bajos".
+  <br> Pero en junio de 2022, la propia UICN declaró en peligro de extinción a la mariposa monarca migratoria, la icónica subespecie común en Norteamérica. Pero apenas un año más tarde, en septiembre de 2023, la misma agencia se retractó de su declaración y volvió a situar a la subespecie nortamericana en la categoría de vulnerable a la extinción, un nivel inferior en el sistema de clasificación de riesgos. </p>
+  <h4 id="seccion2">Conservación</h4>
+  <p>muchos científicos están preocupados por la población oriental de mariposas monarca, que pasan el verano al este de las Montañas Rocosas. Este grupo cada vez es más reducido y su supervivencia puede verse amenazada por diversos desastres naturales en sus hábitats invernales mexicanos, así como por la menor superficie de plantas del algodoncillo en su hogar estival.
+
+  <br>Los santuarios de las monarcas protegen los hábitats invernales de las mariposas y atraen a turistas, quienes ayudan a proporcionar fondos para apoyar sus esfuerzos. Algunos, sin embargo, están en riesgo por el desarrollo humano y los conflictos .
+  
+  <br>También hay muchos esfuerzos a gran escala para proteger el hábitat, administrar mejor la tierra para los polinizadores, reponer el algodoncillo, crear conciencia y recopilar nueva evidencia científica para comprender mejor a las monarcas.</p>
+    
+  <h4 id="seccion3">Trurismo responsable</h4>
+  El turismo responsable se define como la actitud de respeto en relación a los lugares y a las personas con las cuales el turista entra en contacto a lo largo de su estancia en el lugar que visita y se caracteriza por:
+  <ul>
+    <li>El respeto al medio ambiente.</li>
+    <li>Minimizar los impactos negativos económicos, ambientales y sociales.</li>
+    <li>Crear beneficios para la gente local y mejorar el bienestar de las comunidades locales.</li>
+    <li>Involucrar a las personas locales en las decisiones que afectan sus vidas y oportunidades de vida.</li>
+    <li>Hacer contribuciones positivas para la conservación del patrimonio natural y cultural, aportando a la conservación de la diversidad cultural del mundo.</li>
+    <li>Proporcionar experiencias más agradables para los turistas a través del contacto con la población local y una mayor comprensión de los aspectos sociales y ambientales de la cultura local.</li>
+    <li>Ser culturalmente sensible, promocionar respeto y entendimiento entre los turistas y los anfitriones y contribuir al desarrollo de la confianza y el orgullo local.</li>
+  </ul>
+
+    <a href="index.html">Regresar al inicio</a>
+    <a href="#anclajes">Regresar a anclajes</a>
+    <br>
+    <br>
+    <br>
+  <h2>Ancleje externo</h2>
+  <br>
+  <!--Estos anclajes enlazan a una página web diferente. El valor del atributo href es la URL completa del sitio web de destino y el identificador de la sección.-->
+  <br>
+  <a href="https://www.facebook.com/p/Mariposa-Monarca-Santuario-Sierra-Chincua-Oficial-100069396991272/" target="_blank">Página de FB Santuario Sierra Chincua</a>
+  <br>
+  <a href="https://www.facebook.com/p/Santuario-de-la-Mariposa-Monarca-el-Rosario-100089445413166/" target="_blank">Página de FB Santuario el Rosario</a>
+  <br>
+  <a href="https://www.google.com/maps/place/Santuario+de+la+Mariposa+Monarca+%E2%80%9CEl+Rosario%E2%80%9D/@19.588266,-100.2700915,17z/data=!3m1!4b1!4m6!3m5!1s0x85d2be23aeef4fbf:0xa9e9fc9947a4d7c0!8m2!3d19.588266!4d-100.2675166!16s%2Fg%2F11b5wrfbys?entry=ttu" target="_blank">Mapa del santuario</a>
+  <h4>Anclaje número</h4>
+  <a href="tel:+527151353401">Teléfono Santuario el Rosario</a>
+  <br>
+  
+  <br>
+  <h4>Anclaje de correo electrónico</h4>
+  <a href="mailto:donaciones@santuario-monarca.com.mx">E-mail para donaciones Satuario el Rosario</a>
+  <br>
+  <br>
+  <hr>
+  <h2>Formulario de adopción</h2>
+  <!--Usando elemento form-->
+  <form action="/procesar_formulario" method="post">
+    <!--La etiqueta form se utuiliza para crear un formulario en html que permite a los usuarios ingresar información
+    Action especifica la URL a la que se enviarán los datos del formulario cuando este se envía
+    Method: define el metodo http que se utilizará para enviar los datos (puede ser get o post)-->
+  
+    <br>
+    <h4>Etiqueta input</h4> <!--La etiqueta input se utiliza para crear campos deentrada en un formulario-->
+    <input type="text" name="usuario" placeholder="Usuario">
+    <br>
+    <input type="password" name="contraseña" placeholder="Contraseña">
+      <!-- type: Define el tipo de entrada (texto, contraseña, correo electrónico, etc.). 
+      name: Es el nombre del campo, utilizado para identificar el dato cuando se envía el formulario. 
+      placeholder: Proporciona un texto de ejemplo dentro del campo de entrada. -->
+      <br>
+      <br>
+    <h4>Etiqueta label</h4>
+        <!--La etiqueta label se utiliza para etiquetar un elemento de entrada en un formulario, lo que mejora la accesibilidad y experiencia de usuario-->
+        <label for="usuario">Usuario:<!--for: es un atributo, se asocia con el id de un elemento de entrada para indicar a que campo se   refiere-->
+          <input type="text" id="usuario" name="usuario">
+        </label>
+    <br>
+    <h4>Etiqueta button</h4>
+    <!--Esta etiqueta se utiliza para crear botones en un formulario que los usuarios pueden usar al hacer clics y enviar información-->
+    <button type="submit">Enviar</button>
+    <button type="reset">Resetear</button>
+    <br>
+    <h4>Área de texto</h4>
+    <textarea name="comentario" id="comentario" cols="50" rows="20" placeholder="Comentario"></textarea>
+    <br>
+    <input type="number" name="number" placeholder="Introduzca su edad">
+    <br>
+    <h4>Correo electrónico</h4>
+    <input type="email" name="correo" placeholder="Ingrese su e-mail">
+    <br>
+    <h4>Número de telefono</h4>
+    <input type="tel" name="telefono" placeholder="Ingrese su celular">
+    <br>
+    <h4>Fecha de cumpleaños</h4>
+    <input type="date" name="fecha">
+    <br>
+    <h4>Archivo (file)</h4>
+    <input type="file" name="archivo">
+
+  </form>
+
+</body>
+</html>

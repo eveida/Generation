@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--La declaración del tipo de doc. y ayuda al navegardor a mostrar las páginas web y DOCTYPE no distingue entrs mayus y minúsculas-->
+<!--indicar comentario-->
+<!--CTRL+S: para guardar cambios-->
+<!--ALT+Z: ajustar el texto-->
+<html lang="en">
+    <!--El elemento html encierra todo el contenido de la página y, a veces se le conoce como elemento raíz-->
+<head>
+    <!--Actúa como el contenedor de todo aquello que quieres incluir en la página HTML, no es visibile para los usuario de la página. Puede incluir palabras clave, una descripción código CSS para dar estilo al contenido.-->
+    <meta charset="UTF-8">
+    <!--Esta etiqueta especifica la codificación de caracteres utilizada en la página we. En este caso, se espablece la codificación de caracteres estándar que admite la amplia variedad de idiomas y caracteres especiales.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Esta etiqueta se utiliza para establecer el tamaño y la escala inicial de nuestra página web en los dispositivos móviles. Esto asegura que la página se adapte a diferentes tamaños en la pantalla-->
+    <title>Introducción a HTML</title>
+</head>
+<body>
+    <!--van todos los elementos de nuestro sitiio-->
+    <!--Encierra todo el contenido que quieres mostrar a los usuarios que visiten tu página, ya sea texto, imagen, etc.-->
+    <p>¿Porque entré a generation?</p> <!--para indicar que aquí escribiremos un párrafo-->
+    <p>Porque vi que ofrecían métodos para mejorar las softskills y ese es mi punto débil al hacer entrevistas de trabajo</p>
+    <!--Etiquetas de cabecera (h1...h6)-->
+    <h1>One Direction</h1>
+    <h2>Taylor Swift</h2>
+    <h3>Jenni Rivera</h3>
+    <h4>Belanova</h4>
+    <h5>Bad Bunny</h5>
+    <h6>Feid</h6>
+
+    <br> <!--Es un elemento que define un salto de línea sin comenzar un nuevo párrafo-->
+    <hr> <!--La etiqueta define una ruptura temática en una página HTML y, con mayor frecuencia se muestra como una regla horizontal. Se usa para reparar el contenido 
+     en una página-->
+
+<!--Atributos-->
+ <!--Atributos globales: Son aquellos que se aplicar a todos los elementos del documento, y no dependen de la etiqueta. Entre los atributos globlales más importantes están:
+        - Class: Se usa para especificar una clase CSS que se aplicará a un elemento. Por ejemplo <div class="clase1 clase2">.
+        
+        - id: Se usa para especificar un identificador unico para un elemento (el valor debe ser único dentro del documento HTML).
+
+        - Style: Se usa para especificar una propiedad CSS que se aplicará a un elemento. El atributo HTML style se usa para agregar estilos a un elemento, como color, fuente, tamaño y más.
+    https://www.aluracursos.com/blog/ques-es-html-parte-5-atributos -->
+
+<h3>Atributos HTML</h3>
+<p style= "color: blueviolet;">Los atributos HTML proporcionan información adicional sobre elementos.
+    <br> Todos los elementos HTML pueden tener atributos y estos proporcionan información adicional sobre los elementos. Los atributos siempre se especifican en la etiqueta de inicio, y generalmente vienen en pares de nombre, valor como: nombre="valor"
+</p>
+<p style="color: rgb(223, 182, 133);">Mira este enlace</p>
+<br>
+<hr>
+<!--Etiquetas de párrafos de texto
+Nos sirven para crear párrafos dentro de nuestro documento 
+Las etiquetas de párrafo tienen unan serie de atributos que nos permiten definir el tamaño, color, estilo, etc.
+<p align="center">
+    <p align="right">
+    <p align="left">
+    <p align="justify"> -->
+
+        <!--Etiquetas Semanticas: fragmentos de texto
+    Son etiquetas HTML simples para seleccionar un fragmento de texto y dotarlo de un significado semántico especial. Lo principal es entender que no se hace sólo por mera intención visual, sino porque se le quiere dar un significado semántico, y además, quizás también por una cuestión visual
+    https://lenguajehtml.com/html/texto/que-son/
+-->
+<p align="center" style="background-color : blueviolet; color: bisque;">
+    <br> <b><em>Jenni Rivera</em> </b> <!--Etiqueta *em* pata texto enfatizado -->
+   <br> Jenni Rivera se abrió paso con su talento, entrega y carisma. Hoy por hoy su música continúa haciendo historia generando millones de reproducciones en streamings en las diferentes plataformas digitales. Así como grandes ventas en sus artículos producidos bajo su sello. Por lo que hacen que su legado siga prevaleciendo a través de los días.
+<br><del> Mariposa de barrio</del> <!--Etiqueta *del* para tachar el texto-->
+<u>La gran señora</u> <!--etiqueta*u* para formato subrayado-->
+</p>
+<br>
+<hr>
+<!--Etiquetas de enlace.-->
+    <!--Los enlaces nos permiten la navegacion por medio de hipervinculos (links) que realizan una conexion y referencian otros archivos o paginas web dentro de la misma aplicacion o externa a la misma.
+
+    En HTML 5 se pueden definir los enlaces con la etiqueta a que significa "anchor" o ancla. Esta etiqueta tiene varios atributos:
+
+    - href: nos permite definir la ubicación de la página a la que nos vamos a enlazar. Este atributo puede ser una URL (externa) o un archivo dentro de nuestra carpeta del proyecto (assets). La dirección va entre comillas.El atributo href. La <a>etiqueta define un hipervínculo. El href-atributo especifica la URL de la página a la que va el enlace.
+
+    - target: Define la ventana de destino, que puede ser una ventana nueva o la misma ventana.
+        - _blank: abre el enlace en una nueva ventana.
+        - _self: abre el enlace en la misma ventana. Este es el valor por defecto.
+        Ya que sabemos como hacer referencias a paginas, es importante conocer las distintas rutas de enlace y sus tipos.
+
+    - Rutas absolutas: Son aquellas que definien la ubicacion completa de un archivo o pagina web, por ejemplo: http://www.google.com.
+
+    - Rutas relativas: Son las que se definen a partir de la posicion en la estructura local de la pagina que lo esta refiriendo,es decir, solo indica el orden de directorios, por ejemplo: /assets/img/perritoplayero.jpg.
+-->
+<!--Etiqueta *a*-->
+<h4>Etiqueta a</h4>
+<a href="https://www.taylorswift.com/" target="_blank"> Taylor tu patrona </a> 
+<br>
+<a href="mailto: eveida.palos@gmail.com">Contacto swiftie</a>
+<br>
+<br>
+<!--Etiqueta imagen nos permite agregar una imagen en un documento web. En formatos más usados: jpg, png, bmp...
+    - src (source): define la ubicación de nuestro archivo, externo o interno
+    - width: definimos el ancho de nuestra imagen
+    - height: definimos el alto de la imagen
+    - alt: agregamos una descripación a la imagen-->
+<img src="./assets/Borreguito.jpeg" width="400" alt="peace">
+<br>
+<hr>
+<!--
+Listas ordenadas: Listas que tienen un orden (numeros o letras)
+    1.- Tacos al pastor
+    2 - Tacos de suadero
+    3.- Tacos de chicharron
+
+    a.- Tacos al pastor
+    b - Tacos de suadero
+    c.- Tacos de chicharron
+
+Listas desordenadas: Listas que NO tienen un orden (bullets o figuritas)
+
+    - Tacos al pastor
+    - Tacos de suadero
+    - Tacos de chicharron
+
+    <ol> Ordered list o lista ordenada </ol>
+    <li> List item o elemento de la lista </li>
+    <ul> desordenada
+
+-->
+<h3>Listas ordenadas y desordendas</h3>
+<ol> Pasos para una limonada
+    <li>Conseguir los ingredientes: limones, agua y azúcar</li>
+    <li>Agregar azúcar al agua y revolver hasta que se disuelva</li>
+    <li>Cortar y exprimir los limones en el agua, volver a revolver </li>
+    <li>Servir </li>
+</ol>
+<br>
+<br>
+<ul>Canciones de 1D
+    <li>Stand up</li>
+    <li>They dont know about us</li>
+    <li>Better than words</li>
+    <li>Fools gold</li>
+    <li>Home</li>
+</ul>
+<!--Etiqueta Div-->
+<!--La <div>etiqueta define una división o una sección en un documento HTML.
+    La <div>etiqueta se utiliza como contenedor de elementos HTML, que luego se diseñan con CSS o se manipulan con JavaScript.
+    
+    La <div>etiqueta se diseña fácilmente usando el atributo class o id.
+    
+    ¡Se puede poner cualquier tipo de contenido dentro de la <div> etiqueta! 
+    
+    Nota: De forma predeterminada, los navegadores siempre colocan un salto de línea antes y después del <div>elemento.
+
+    Todos los atributos que se agreguen al div se aplicarán a todos los elementos. -->
+    
+    <ul>Lista del súper
+        <li>Shampoo</li>
+        <li>Pasta de dientes</li>
+        <li>Pan dulce</li>
+        <li>Verduras congeladas</li>
+        <li>Cereal</li>
+    </ul>
+
+
+    <h2>Etiqueta div</h2>
+    <div class="primera" style="background-color: antiquewhite; border: 1px red;">
+        <h4>soy un encabezado dentro de un div</h4>
+        <p>soy un párrafo dentro de DIV</p>
+    </div>
+    <p>Soy un párrafo fuera de div</p>
+    <br>
+    <br>
+<hr>
+<!--La etiqueta <span> es un contenedor en línea que se utiliza para marcar una parte de un texto o una parte de un documento.
+
+    La etiqueta <span> se diseña fácilmente con CSS o se manipula con JavaScript usando el atributo class o id.
+    
+    La etiqueta <span> es muy parecida al elemento <div> , pero <div> es un elemento a nivel de bloque y <span>es un elemento en línea.-->
+    <h3>Elemento span</h3>
+    <p>Taylor Swift es una cantante y compositora estadounidense. Es conocida por su inicio en la música country y <span style="color: rgb(0, 106, 255);">transición al pop</span>, ha sido una de las cantautoras más jóvenes en ser firmadas por una compañía disquera y una de las artistas con música más vendida de la industria. <span style="background-color: blanchedalmond;">Taylor Swift ha ganado 12 premios Grammy. </span>
+        <br> <span style="color: blueviolet;"> Las eras de Taylor Swift se refieren a cada una de sus etapas musicales, divididas de acuerdo al lanzamiento de cada uno de sus discos. Cada disco corresponde a una era. </span>
+    </p>
+    
+</body>
+</html> 
+<!--Indica el cierre de nuestro documento HTML que iniciamos en el DOCTYPE-->

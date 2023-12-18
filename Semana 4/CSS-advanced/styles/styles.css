@@ -1,0 +1,228 @@
+:root {
+    /*--nombre-variable*/
+    /*Enfoque de diseño basado en sistemas para establecer patrones escalables y reutilizables.
+    Se personalizan varables para acceder a cualquier valor de una propiedad mediante la pseudoclase ':root' con la sintaxis*/
+--font-primary: 'Source Sans 3', sans-serif;
+--color-primary: #23606E;
+--color-background: #FACFCE;
+--color-text-primary: #008F8C;
+--color-text-secondary: #023535;
+--color-light: #F29325;
+--color-dark: #592722;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+}
+
+.position {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-dark);
+}
+
+/*La posición estática es la posición por default en html, no se afecta por ningún top, bottom, left y right*/
+#static {
+    position: static;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--color-primary);
+}
+
+/*Es posicionado de forma relativa al elemento anterior  y si permite el movimiento mediante propiedades top, bottom, left y right*/
+#relative {
+    position: relative;
+    top: 300px;
+    bottom: 220px;
+    left: 220px;
+    right: 100px;
+    background-color: var(--color-text-secondary);
+}
+
+/*Se posiciona de forma relativa a su ancestro más cercano y no al viewport*/
+#absolute {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--color-light);
+}
+
+/* #fixed {
+    position: fixed;
+    left: 500px;
+    top:500px;
+    background-color: var(--color-dark);
+} */
+
+#chat {
+    position: fixed;
+    top: 520px;
+    left: 370px;
+    width: 60px;
+    height: 60px;
+}
+
+#whatsapp-icon {
+    width: 100%;
+}
+
+.display-inline {
+
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-text-secondary);
+    color: var(--color-light);
+    text-align: center;
+    margin: 2px;
+}
+
+#display-1, #display-2 {
+    display: inline;
+
+}
+
+.display-block {
+    /*display: block*/
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-light);
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin: 2px;
+}
+
+@media (max-width: 720px) {
+.display-none{
+    display: none;
+}
+}
+
+/*Display flex me permite trabajar de manera flexible con elementos alineados dentro de un ancestro. El flexbox se aplica en el container y tiene efecto sobre los hijos.
+Por default, la dirección de flex es una fila (row)
+Vamos  a pooder acceder a diversas propiedades para modificar el comportamiento de los elementos
+ > - Flex direction: column, column reverse, row, row.reverse
+ > - Flex-wrap: wrap, nowrap, wrap-reverse
+ > - justify.content: center. flex-start. flex-end, space between
+ > - align-item: start, end, center
+ > - align-self: self-start, self-end*/
+.container {
+
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*align-items: center;*/
+
+    width: auto;
+    height: 350px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    background-color: var(--color-dark);
+    border-radius: 6px;
+}
+
+#item6 {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+/*Grid Layout*/
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.display-grid {
+    background-color: var(--color-text-secondary);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    border: solid var(--color-background) 1px;
+
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "aside section section"
+        "aside article article"
+        "footer footer footer"
+    ;
+
+    width: auto;
+    height: 500px;
+    border: solid var(--color-dark) 0.7px;
+    text-align:center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+header {
+    background-color:slateblue;
+    grid-area: header;
+}
+
+
+aside {
+    background-color:hotpink;
+    grid-area: aside;
+}
+
+section {
+    background-color: darkviolet;
+    grid-area: section;
+}
+
+article {
+    background-color: gold;
+    grid-area: article;
+}
+
+footer {
+    background-color: maroon;
+    grid-area: footer;
+}
+
+@media (max-width: 720px) {
+    .container-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 2fr)
+        grid-template-areas: 
+            "header"
+            "aside"
+            "section"
+            "article"
+            "footer";
+    }
+}

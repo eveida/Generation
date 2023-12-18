@@ -1,0 +1,85 @@
+/*Tabla sin formato*/
+.SF{
+    border-radius: 0px;
+    background-color: transparent;
+    border-color: beige;
+    color: beige;
+}
+.Nom{
+    color: beige;
+}
+
+/*Estilos generales*/
+body {
+    background-color: #f1874d;
+    font-family: 'Roboto', sans-serif;
+}
+.Tablas {
+    font-family: 'Roboto Serif', serif;
+    font-size: 40px;
+    padding-left: 90px;
+}
+h1{
+    color: beige;
+}
+.Practica {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+.Ni {
+    font-size: 20px;
+    color: beige;
+    font-family: 'Roboto Serif', serif;
+}
+footer{
+    color: beige;
+    font-family: 'Roboto Serif', serif;
+    font-size: xx-small;
+}
+
+    /*hr no funciona*/  
+.hr-color{
+    color: beige;
+    border-style: solid;
+}
+/*Estilos tabla general*/
+.Cuerpo-tabla {
+    border-radius: 10px;
+    width: 400px;
+    padding: 5px;
+    background-color: none;
+    border-color: beige;
+    border-style: solid;
+}
+/*Estilos Celdas TD*/
+td {
+    border-radius: 10px;
+    text-align: center;
+    color: beige;
+    padding: 5px;
+    background-color: none;
+    border-color: beige;
+    border-style: solid;
+}
+/*Estilos Celdas de encabezado TH*/
+th{
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-color: beige;
+    border-style: solid;
+}
+.Encabezado{
+    background-color: #9bc99b;
+}
+
+/*circulos*/
+.elemento {
+    width: 200px;
+    height: 100px;
+    fill: none;
+    stroke: beige;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}

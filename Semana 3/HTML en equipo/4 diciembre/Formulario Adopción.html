@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Formulario de adopción</title>
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="./style_forms.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
+</head>
+
+<!--Body-->
+<body>
+<h1>Lomitos Disponibles</h1>
+<form action="procesar_formulario" method="post">
+<h4>Datos personales </h4>
+<h5> Nombre completo</h5>  
+  <input class="contenedor" type="text" name="usuarios" placeholder="Nombre completo del adoptante">
+<br> 
+<h5>Correo electrónico</h5>
+   <input class="contenedor"  type="email" name="correo" placeholder="Ingresa tu correo electrónico">
+<br>
+<h5>Teléfono</h5>
+   <input class="contenedor" type="tel" name="telefono" placeholder="Ingresa tu número">
+<br>
+<h5>Nivel de estudios</h5>
+   <input class="contenedor"  type="text" name="estudios" placeholder="Nivel de estudios">
+<br>
+<h5>Edad</h5>
+   <input class="contenedor" type="number" name="edad" placeholder="edad">
+<br>
+<br>
+<hr>
+<h4>Datos del hogar</h4>
+<h5>¿Cuentas con patio en tu jardín?</h5>
+   <label for="Patio">
+    <input id="Patio" type="radio" name="patio-terraza-jardin" value="Patio" checked>Patio
+   </label>
+  <br>
+   <label for="Terraza">
+    <input id="Terraza" type="radio" name="patio-terraza-jardin" value="terraza">Terraza
+   </label>  
+  <br>
+   <label for="Jardin">
+    <input id="Jardin" type="radio" name="patio-terraza-jardin" value="jardín">Jardín
+   </label>
+<br>
+<br>
+<hr>
+<h4>Datos de la mascota</h4>
+   <input class="contenedor" type="number" name="Edad" placeholder="Edad de la mascota">
+<br>
+
+
+
+
+
+
+
+
+</form>
+
+
+</body>
+
+<!--Footer-->
+<br>
+<footer> Sitio web diseñado por HotTamalitos. (HTML) </footer> 
+</html>

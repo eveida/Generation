@@ -1,0 +1,25 @@
+p{
+    background-color: palegreen;
+}
+
+#Malik{
+    color: orangered;
+}
+#Styles{color:darkslategrey;
+}
+
+.OneD{color: brown;
+}
+.Larry {
+    width: 200;
+    height: 200;
+    margin: 20px 50px;
+    padding: 30px;
+    border: solid seashell;
+}
+
+div{
+    background-color: teal;
+    padding: 30px;
+    border: solid red;
+}

@@ -1,0 +1,42 @@
+#R3{ 
+    background-color:#3c0000;
+    border-radius: 16px;
+}
+
+
+#marca{
+    color:blue;
+    background-color: white;
+}
+
+/*Menú*/
+
+/*Estilos generales*/ 
+body{
+    background-image:url(https://i.pinimg.com/564x/5f/ba/d6/5fbad6c44e68b9f884794e19c1da366a.jpg)
+}
+
+h1 {
+    font-family:'Lora', serif;
+    font-style: normal;
+    color: #b6a8a9;
+  }
+/*Estilos de los títulos*/
+.tituloreceta{
+    background-color: #ff8478;
+    color: whitesmoke;
+    padding-left: 28px;
+    font-size: 26px;
+    border-radius: 16px;
+}
+
+/*Estilo listas*/
+
+  li{
+    color:#F7F7F7;
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  ol{
+    border-radius: 16px;
+  }

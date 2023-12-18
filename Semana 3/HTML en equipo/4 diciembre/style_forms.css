@@ -1,0 +1,32 @@
+/*variables*/
+:root{
+    --beige: #DD9F5A;
+    --hot-pink: #ED2431;
+    --olive: #5C5524;
+    --gray: #D9DED8;
+    --texto-general: #38342F;
+}
+/*Estilos generales*/
+
+body {
+    color: var(--texto-general);
+    background-color: var(--gray);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+input{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.contenedor{
+    width: 500px;
+    height: 30px;
+}
+
+
+
+
