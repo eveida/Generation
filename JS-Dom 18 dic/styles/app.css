@@ -1,0 +1,17 @@
+button {
+    padding: 10px 20px;
+    border-radius: 8px ;
+    font-size: 20px;
+    border: none;
+    background-color: darkviolet;
+    cursor: pointer;
+    color: beige;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
