@@ -23,11 +23,11 @@ const createUser = (user) => {
         li.textContent = film;
         ul.appendChild(li);
 
-    })
-    ul.style.listStyleType = none;
+    });
+    ul.style.listStyleType = "none";
     ul.style.padding = "0";
     ul.style.color = "#fa9dec"
-};
+}
 
 //Mostrando elementos de lista en fila
     // document.getElementById("fav-films").textContent = user.favfilms;
@@ -41,9 +41,17 @@ createUser(user);
 
 //eventos para actualizar el username mediante el input boton
 const inputName = document.getElementById("name");
-const profileBtn = document.getElementById("btnmain");
+const profileBtn = document.getElementById("btn-main");
 const userName = document.getElementById("username");
 
 profileBtn.addEventListener("click", () => {
     userName.textContent = inputName.value;
+})
+
+const inputEmail = document.getElementById("email-input");
+const emailBtn = document.getElementById("btn-email");
+const correoVerif = document.getElementById("email");
+
+emailBtn.addEventListener("click", () => {
+    correoVerif.textContent = inputEmail.value;
 })
