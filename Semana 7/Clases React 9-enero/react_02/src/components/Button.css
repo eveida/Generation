@@ -1,0 +1,7 @@
+button {
+    margin: 0px 15px;
+}
+button:hover{
+    background-color: blueviolet;
+    transition: 1s;
+}

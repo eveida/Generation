@@ -1,0 +1,14 @@
+.astro--container {
+    border: solid;
+    background-color:lightseagreen;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+    color: antiquewhite;
+    box-shadow: #c0a7fa 0px 5px 10px 0px;
+}
+.astro--name, .astro--craft {
+    padding: 5px 2px;
+}
